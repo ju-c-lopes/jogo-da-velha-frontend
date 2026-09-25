@@ -37,7 +37,7 @@ function verificarVitoria(board, jogador) {
     );
 }
 
-const socket = io('http://192.168.0.40:3006');
+const socket = io('https://jogo-da-velha-backend-l2yo.onrender.com/');
 function createMultplayerGame() {
     const createMatch = document.querySelector('.create-game');
     if (createMatch) createMatch.addEventListener('click', () => socket.emit('create-game'));
