@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <title>Jogo da Velha - Passatempo e Diversão</title>
+        <meta name="description" content="O clássico Jogo da Velha, o melhor passatempo para se divertir em dupla. Convide seu adversário e divirta-se livremente!">
+        <meta property="og:title" content="Jogo da Velha - Passatempo e Diversão">
+        <meta property="og:description" content="Jogue Jogo da Velha online com sua companhia preferida e divirta-se.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://jogo-da-velha.fun/img/share-game.webp">
+        <meta property="og:url" content="https://jogo-da-velha.fun/">
+        <link rel="canonical" content="https://jogo-da-velha.fun/">
+        <script src="https://cdn.socket.io/4.8.3/socket.io.min.js" integrity="sha384-kzavj5fiMwLKzzD1f8S7TeoVIEi7uKHvbTA3ueZkrzYq75pNQUiUi6Dy98Q3fxb0" crossorigin="anonymous"></script>
+        <script src="file.js" defer></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="notify"></div>
+        <button class="menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h1><a href="/">Jogo da Velha</a></h1>
+        <div class="about">
+            <h2>Sobre o Jogo</h2>
+            <p>O Jogo da Velha é um jogo clássico para dois jogadores.</p>
+            <p>Os jogadores alternam entre si para preencher os espaços do tabuleiro, com o objetivo de formar uma linha de três símbolos iguais.</p>
+            <div class="separator"><hr>◆<hr></div>
+            <p>Este é um jogo de passatempo, não há dados para serem armazenados, apenas diversão e entretenimento.</p>
+            <p>Os dados da partida são temporários e não são salvos. A partir do momento em que a partida é encerrada, ou o jogo é fechado, todos os estados das jogadas são perdidos.</p>
+            <p>A proposta é apenas passatempo e diversão, então, convide seu adversário e</p>
+            <p class="welcome">Divirta-se!</p>
+            <div class="contact">
+                <div class="github">
+                    <a href="https://github.com/ju-c-lopes" target="_blank" rel="noopener noreferrer"><img src="img/github.webp" alt="GitHub Juliano Lopes, desenvolvedor do Jogo da Velha e da plataforma Juclops' TechXperience" width="40" height="40"/></a>
+                    <p>GitHub: Juliano Lopes</p>
+                </div>
+                <div class="email">
+                    <a href="mailto:juliano.co.lopes@gmail.com"><img src="img/email.webp" alt="Email de contato de Juliano Lopes" width="40" height="40"></a>
+                    <p>Email de contato</p>
+                </div>
+            </div>
+        </div>
+        <main>
+            <!--  JOGO DA VELHA -->
+            <div class="game">
+                <div id="d1" onclick="jogada('d1')"></div>
+                <div id="d2" onclick="jogada('d2')"></div>
+                <div id="d3" onclick="jogada('d3')"></div>
+                <div id="d4" onclick="jogada('d4')"></div>
+                <div id="d5" onclick="jogada('d5')"></div>
+                <div id="d6" onclick="jogada('d6')"></div>
+                <div id="d7" onclick="jogada('d7')"></div>
+                <div id="d8" onclick="jogada('d8')"></div>
+                <div id="d9" onclick="jogada('d9')"></div>
+            </div>
+            <div id="msg"></div>
+            <button class="create-game">Criar Partida</button>
+            <div id="invite"></div>
+        </main>
+        <footer>
+            <p>&copy; Jogo da Velha.</p>
+            <p>Um Projeto <a href="https://techxperience.blog/" target="_blank" rel="noopener noreferrer"><em>Juclops' TechXperience</em></a></p>
+        </footer>
+    </body>
+</html>
